@@ -1,85 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio SysAdmin & IT Support</title>
+  <title>Portofolio | SysAdmin & IT Support</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-  <nav class="p-5 border-b border-slate-800 flex justify-between items-center max-w-5xl mx-auto">
-    <h1 class="text-xl font-bold tracking-wider text-emerald-400">&lt;SysAdmin /&gt;</h1>
-    <div class="space-x-4 text-sm text-slate-400">
-      <a href="#projects" class="hover:text-emerald-400 transition">Proyek</a>
-      <a href="#skills" class="hover:text-emerald-400 transition">Skill</a>
+  <nav class="p-5 bg-white border-b border-sky-100 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold tracking-wider text-sky-600">&lt;SysAdmin /&gt;</h1>
+      <div class="space-x-6 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-sky-600 transition">Tentang</a>
+        <a href="#projects" class="hover:text-sky-600 transition">Proyek</a>
+        <a href="#skills" class="hover:text-sky-600 transition">Skill</a>
+        <a href="#contact" class="hover:text-sky-600 transition">Kontak</a>
+      </div>
     </div>
   </nav>
 
-  <section class="max-w-5xl mx-auto px-5 py-20 text-center md:text-left">
-    <span class="text-emerald-400 text-sm font-mono bg-emerald-950 px-3 py-1 rounded-full border border-emerald-800">
-      System Administrator & IT Support Specialist
-    </span>
-    <h2 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6">
-      Menjaga Sistem Tetap Handal, Aman, & Optimal.
-    </h2>
-    <p class="text-slate-400 max-w-2xl text-lg mb-8">
-      Fokus pada pengolahan infrastruktur server, jaringan lokal/cloud, otomatisasi task, dan pemecahan masalah (troubleshooting) IT.
-    </p>
+  <section id="about" class="max-w-5xl mx-auto px-5 py-16 md:py-24 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+    
+    <div class="text-center md:text-left md:w-2/3">
+      <span class="text-sky-700 text-sm font-mono bg-sky-100 px-3 py-1 rounded-full border border-sky-200">
+        System Administrator & IT Support Specialist
+      </span>
+      <h2 class="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-slate-900 leading-tight">
+        Menjaga Jaringan & Server Tetap Handal, Aman, dan Optimal.
+      </h2>
+      <p class="text-slate-600 text-base md:text-lg mb-8 leading-relaxed">
+        Halo! Saya berfokus pada pengelolaan infrastruktur server (Linux/Windows), konfigurasi jaringan, otomatisasi tugas teknis, dan pemecahan masalah (*troubleshooting*) IT.
+      </p>
+      <div class="flex gap-4 justify-center md:justify-start">
+        <a href="#projects" class="bg-sky-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-600 transition shadow-md shadow-sky-200">
+          Lihat Proyek
+        </a>
+        <a href="#contact" class="border border-sky-300 text-sky-700 bg-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-50 transition">
+          Hubungi Saya
+        </a>
+      </div>
+    </div>
+
+    <div class="md:w-1/3 flex justify-center">
+      <div class="relative">
+        <div class="absolute -inset-1.5 bg-gradient-to-r from-sky-300 to-blue-400 rounded-full blur opacity-75"></div>
+        
+        <img 
+          src="foto-profil.jpg" 
+          alt="Foto Profil" 
+          class="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-white shadow-xl"
+        >
+      </div>
+    </div>
+
   </section>
 
   <section id="projects" class="max-w-5xl mx-auto px-5 py-12">
-    <h3 class="text-2xl font-bold mb-8 border-l-4 border-emerald-400 pl-3">Proyek & Home Lab</h3>
+    <h3 class="text-2xl font-bold mb-8 border-l-4 border-sky-500 pl-3 text-slate-900">Proyek & Home Lab</h3>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-emerald-500/50 transition">
-          <span class="text-xs text-emerald-400 font-mono">Infrastructure & Virtualization</span>
-          <h4 class="text-xl font-bold mt-2 mb-3">Homelab Server & Active Directory Setup</h4>
-          <p class="text-slate-400 text-sm mb-4">Membangun server lokal berbasis Proxmox VE dengan VM Windows Server (AD, DNS, DHCP) dan Ubuntu Server untuk Docker container.</p>
-          <div class="flex gap-2 text-xs font-mono text-slate-300 mb-4 flex-wrap">
-                          <span class="bg-slate-900 px-2 py-1 rounded">Proxmox</span>
-                          <span class="bg-slate-900 px-2 py-1 rounded">Windows Server</span>
-                          <span class="bg-slate-900 px-2 py-1 rounded">Docker</span>
-                      </div>
-          <a href="#" class="text-emerald-400 text-sm hover:underline font-semibold">Lihat Detail &rarr;</a>
+      
+      <div class="bg-white p-6 rounded-xl border border-sky-100 shadow-sm hover:shadow-md hover:border-sky-300 transition">
+        <span class="text-xs text-sky-600 font-mono font-semibold">Infrastructure & Virtualization</span>
+        <h4 class="text-xl font-bold mt-2 mb-3 text-slate-900">Homelab Server & Active Directory Setup</h4>
+        <p class="text-slate-600 text-sm mb-4">
+          Membangun server lokal berbasis Proxmox VE dengan VM Windows Server (AD, DNS, DHCP) dan Ubuntu Server untuk Docker container.
+        </p>
+        <div class="flex gap-2 text-xs font-mono text-slate-600 mb-4 flex-wrap">
+          <span class="bg-sky-50 text-sky-700 px-2.5 py-1 rounded-md border border-sky-100">Proxmox</span>
+          <span class="bg-sky-50 text-sky-700 px-2.5 py-1 rounded-md border border-sky-100">Windows Server</span>
+          <span class="bg-sky-50 text-sky-700 px-2.5 py-1 rounded-md border border-sky-100">Docker</span>
         </div>
-              <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-emerald-500/50 transition">
-          <span class="text-xs text-emerald-400 font-mono">Networking & Security</span>
-          <h4 class="text-xl font-bold mt-2 mb-3">Router PfSense & WireGuard VPN</h4>
-          <p class="text-slate-400 text-sm mb-4">Konfigurasi firewall pfSense dengan fitur Segmentasi VLAN, Traffic Shaping, serta VPN WireGuard untuk akses remote yang aman.</p>
-          <div class="flex gap-2 text-xs font-mono text-slate-300 mb-4 flex-wrap">
-                          <span class="bg-slate-900 px-2 py-1 rounded">pfSense</span>
-                          <span class="bg-slate-900 px-2 py-1 rounded">WireGuard</span>
-                          <span class="bg-slate-900 px-2 py-1 rounded">VLAN</span>
-                      </div>
-          <a href="#" class="text-emerald-400 text-sm hover:underline font-semibold">Lihat Detail &rarr;</a>
+        <a href="#" class="text-sky-600 text-sm hover:underline font-semibold">Lihat Detail &rarr;</a>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl border border-sky-100 shadow-sm hover:shadow-md hover:border-sky-300 transition">
+        <span class="text-xs text-sky-600 font-mono font-semibold">Networking & Security</span>
+        <h4 class="text-xl font-bold mt-2 mb-3 text-slate-900">Router PfSense & WireGuard VPN</h4>
+        <p class="text-slate-600 text-sm mb-4">
+          Konfigurasi firewall pfSense dengan fitur Segmentasi VLAN, Traffic Shaping, serta VPN WireGuard untuk akses remote yang aman.
+        </p>
+        <div class="flex gap-2 text-xs font-mono text-slate-600 mb-4 flex-wrap">
+          <span class="bg-sky-50 text-sky-700 px-2.5 py-1 rounded-md border border-sky-100">pfSense</span>
+          <span class="bg-sky-50 text-sky-700 px-2.5 py-1 rounded-md border border-sky-100">WireGuard</span>
+          <span class="bg-sky-50 text-sky-700 px-2.5 py-1 rounded-md border border-sky-100">VLAN</span>
         </div>
-          </div>
+        <a href="#" class="text-sky-600 text-sm hover:underline font-semibold">Lihat Detail &rarr;</a>
+      </div>
+
+    </div>
   </section>
 
   <section id="skills" class="max-w-5xl mx-auto px-5 py-12">
-    <h3 class="text-2xl font-bold mb-8 border-l-4 border-emerald-400 pl-3">Skill & Tools</h3>
+    <h3 class="text-2xl font-bold mb-8 border-l-4 border-sky-500 pl-3 text-slate-900">Skill & Tools</h3>
     
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div class="bg-slate-800/50 p-4 rounded-lg border border-slate-800">
-          <h5 class="font-semibold text-emerald-400 mb-1">Sistem Operasi</h5>
-          <p class="text-sm text-slate-400">Linux (Ubuntu/Debian), Windows Server, Active Directory</p>
-        </div>
-              <div class="bg-slate-800/50 p-4 rounded-lg border border-slate-800">
-          <h5 class="font-semibold text-emerald-400 mb-1">Jaringan</h5>
-          <p class="text-sm text-slate-400">TCP/IP, DNS, DHCP, VLAN, VPN, Wireshark, Mikrotik</p>
-        </div>
-              <div class="bg-slate-800/50 p-4 rounded-lg border border-slate-800">
-          <h5 class="font-semibold text-emerald-400 mb-1">Virtualisasi & Cloud</h5>
-          <p class="text-sm text-slate-400">Proxmox, VMware, Docker, AWS / GCP Basic</p>
-        </div>
-              <div class="bg-slate-800/50 p-4 rounded-lg border border-slate-800">
-          <h5 class="font-semibold text-emerald-400 mb-1">Automation & Support</h5>
-          <p class="text-sm text-slate-400">Bash Scripting, Python, Ansible, GLPI / osTicket</p>
-        </div>
-          </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white p-5 rounded-xl border border-sky-100 shadow-sm">
+        <h5 class="font-semibold text-sky-600 mb-1">Sistem Operasi</h5>
+        <p class="text-sm text-slate-600">Linux (Ubuntu/Debian), Windows Server, Active Directory</p>
+      </div>
+      <div class="bg-white p-5 rounded-xl border border-sky-100 shadow-sm">
+        <h5 class="font-semibold text-sky-600 mb-1">Jaringan</h5>
+        <p class="text-sm text-slate-600">TCP/IP, DNS, DHCP, VLAN, VPN, Wireshark, Mikrotik</p>
+      </div>
+      <div class="bg-white p-5 rounded-xl border border-sky-100 shadow-sm">
+        <h5 class="font-semibold text-sky-600 mb-1">Virtualisasi & Cloud</h5>
+        <p class="text-sm text-slate-600">Proxmox, VMware, Docker, AWS / GCP Basic</p>
+      </div>
+      <div class="bg-white p-5 rounded-xl border border-sky-100 shadow-sm">
+        <h5 class="font-semibold text-sky-600 mb-1">Automation & Support</h5>
+        <p class="text-sm text-slate-600">Bash Scripting, Python, Ansible, GLPI / osTicket</p>
+      </div>
+    </div>
   </section>
+
+  <footer id="contact" class="bg-white border-t border-sky-100 mt-20 py-8 text-center text-slate-500 text-sm">
+    <p>&copy; 2026 SysAdmin Portfolio. Hosted on GitHub Pages.</p>
+  </footer>
 
 </body>
 </html>
